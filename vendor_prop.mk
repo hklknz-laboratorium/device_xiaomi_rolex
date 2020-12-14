@@ -88,6 +88,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=295 \
     vendor.display.enable_default_color_mode=1
 
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.vendor.build.fingerprint=google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys \
+   ro.bootimage.build.fingerprint=google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys \
+   ro.system.build.fingerprint=google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys \
+   ro.product.build.fingerprint=google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys \
+   ro.build.fingerprint=google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys
+
 # Fm
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fm.transmitter=false
