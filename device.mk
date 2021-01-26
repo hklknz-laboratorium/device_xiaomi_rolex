@@ -470,7 +470,9 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
-     libnl
+     libnl \
+     libstagefright_enc_common \
+     libdisplayconfig.qti \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
