@@ -160,6 +160,11 @@ on boot
     chmod 0660 /sys/kernel/sound_control/headphone_gain
     chmod 0660 /sys/kernel/sound_control/mic_gain
 
+    # Setup default schedTune value for foreground/top-app
+    write /dev/stune/schedtune.prefer_idle 0
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+
     # Create directory used for display
     # for backward compatibility
     mkdir /persist/display 0770 system graphics
