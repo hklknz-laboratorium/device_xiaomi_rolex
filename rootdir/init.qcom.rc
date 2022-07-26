@@ -167,7 +167,7 @@ on boot
     
     # Setup CPU boosting
     write /sys/module/cpu_boost/parameters/powerkey_input_boost_freq "0:1497600"
-    write /sys/module/cpu_boost/parameters/powerkey_input_boost_ms    
+    write /sys/module/cpu_boost/parameters/powerkey_input_boost_ms 1200
 
     # Create directory used for display
     # for backward compatibility
