@@ -18,8 +18,9 @@
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
+    $(LOCAL_PATH)/overlay-lineage \
+    $(LOCAL_PATH)/overlay-kasumi
+    
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Boot animation
