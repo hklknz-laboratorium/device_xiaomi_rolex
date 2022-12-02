@@ -21,7 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common PE stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/kasumi/config/common_full_phone.mk)
+TARGET_FACE_UNLOCK_SUPPORTED := true
+KASUMI_SHIP_LAWNCHAIR := true
 
 # Inherit from rolex device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -30,12 +32,11 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := rolex
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 4A
-PRODUCT_NAME := aosp_rolex
+PRODUCT_NAME := kasumi_rolex
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_VENDOR_PRODUCT_NAME := rolex
-TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 720
 
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
